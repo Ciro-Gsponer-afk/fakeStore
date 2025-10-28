@@ -22,12 +22,11 @@ export default function Productos() {
       <h2 className="productos-title">Lista de productos</h2>
       <div className="productos-grid">
         {productos.map((producto) => (
-          <div className="producto-card" key={producto.id}>
+          <div className="producto-card" onClick={() => Cambiar(producto.id)} key={producto.id }>
             <img src={producto.image} alt={producto.description} className="producto-img"/>
             <h3 className="producto-titulo">{producto.title}</h3>
             <p className="producto-categoria">{producto.category}</p>
             <p className="producto-precio">${producto.price}</p>
-            <button onClick={() => Cambiar(producto.id)}>Ir al Producto</button>
             <p className="producto-rating">{producto.rating.rate}</p>
           </div>
         ))}
