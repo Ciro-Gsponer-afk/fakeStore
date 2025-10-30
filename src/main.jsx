@@ -11,5 +11,5 @@ createRoot(document.getElementById('root')).render(
         <Route path="/:ProductID" element={<Producto />} />
       </Routes>
     </BrowserRouter>
-  </StrictMode>,
+  </StrictMode>
 )
