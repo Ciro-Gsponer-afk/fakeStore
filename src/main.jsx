@@ -6,10 +6,10 @@ import Producto from './Producto'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-      <Routes>
+     <Routes>
         <Route path="/" element={<Productos />} />
         <Route path="/:ProductID" element={<Producto />} />
-      </Routes>
+     </Routes>
     </BrowserRouter>
   </StrictMode>
 )
